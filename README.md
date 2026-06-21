@@ -2,10 +2,9 @@
 
 # gitswapForged
 
-A clean, client-side web application that acts as an interactive version of the GitHub URL-Swap Cheat Sheet. Users can paste a GitHub repository URL, and the app will dynamically generate a grid of cards providing "swapped" URLs that unlock different superpowers for that repository.
+A clean, client-side web application that acts as an interactive version of a GitHub URL-Swap. Users can paste a GitHub repository URL, and the app will dynamically generate a grid of cards providing "swapped" URLs that unlock different superpowers for that repository.
 
-Based on Hyperautomation Labs Cheat Sheet.
-Find more at: [https://hyperautomationlabs.co](https://hyperautomationlabs.co)
+Based on the [Hyperautomation Labs Cheat Sheet](https://hyperautomationlabs.co)
 
 ## Features
 
