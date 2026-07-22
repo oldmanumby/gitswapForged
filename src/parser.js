@@ -1,4 +1,16 @@
 /**
+ * Project: GitWarp
+ * Version: 1.0.0
+ * Description: Engine for parsing GitHub URLs and determining context.
+ * 
+ * Author: B.A. Umberger (Old Man Umby)
+ * Website: https://oldmanumby.com
+ * GitHub: https://github.com/oldmanumby
+ * 
+ * Copyright (c) 2026 B.A. Umberger.
+ * Released under the MIT License.
+ */
+/**
  * GitHub URL Context Parser
  * Pure Vanilla JS parser for GitHub URLs across User, Repo, File, Commit, and PR contexts.
  */

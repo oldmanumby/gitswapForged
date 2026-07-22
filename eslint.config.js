@@ -1,3 +1,15 @@
+/**
+ * Project: GitWarp
+ * Version: 1.0.0
+ * Description: ESLint v9 Flat Configuration for code quality.
+ * 
+ * Author: B.A. Umberger (Old Man Umby)
+ * Website: https://oldmanumby.com
+ * GitHub: https://github.com/oldmanumby
+ * 
+ * Copyright (c) 2026 B.A. Umberger.
+ * Released under the MIT License.
+ */
 import js from '@eslint/js';
 
 export default [

@@ -1,4 +1,16 @@
 /**
+ * Project: GitWarp
+ * Version: 1.0.0
+ * Description: Logic for interactive tool cards like Time Machine and Deep Linker.
+ * 
+ * Author: B.A. Umberger (Old Man Umby)
+ * Website: https://oldmanumby.com
+ * GitHub: https://github.com/oldmanumby
+ * 
+ * Copyright (c) 2026 B.A. Umberger.
+ * Released under the MIT License.
+ */
+/**
  * Pure HTML escaping helper function.
  *
  * @param {string} str

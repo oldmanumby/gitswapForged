@@ -1,3 +1,15 @@
+/**
+ * Project: GitWarp
+ * Version: 1.0.0
+ * Description: Core application initialization and UI event binding.
+ * 
+ * Author: B.A. Umberger (Old Man Umby)
+ * Website: https://oldmanumby.com
+ * GitHub: https://github.com/oldmanumby
+ * 
+ * Copyright (c) 2026 B.A. Umberger.
+ * Released under the MIT License.
+ */
 import {
   createIcons,
   FileText,
