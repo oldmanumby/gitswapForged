@@ -23,6 +23,12 @@
       "claimToken": "eb3485ebf7d50def9b55b799301d2d97104b2efac7fa8d9cc3fe770a8cc5eeb1",
       "claimUrl": "https://here.now/claim?slug=coral-rafter-dqf9&token=eb3485ebf7d50def9b55b799301d2d97104b2efac7fa8d9cc3fe770a8cc5eeb1",
       "expiresAt": "2026-07-23T13:48:22.121Z"
+    },
+    "inner-castle-ry2r": {
+      "siteUrl": "https://inner-castle-ry2r.here.now/",
+      "claimToken": "6e49c8b1e02b71e99da4b59cf0b1ae9dc5641047b0a1fd53f74a0c283ba6bcf5",
+      "claimUrl": "https://here.now/claim?slug=inner-castle-ry2r&token=6e49c8b1e02b71e99da4b59cf0b1ae9dc5641047b0a1fd53f74a0c283ba6bcf5",
+      "expiresAt": "2026-07-23T13:50:33.240Z"
     }
   }
 }

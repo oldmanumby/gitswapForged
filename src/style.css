@@ -240,7 +240,9 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: calc(100% - 30px);
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .card-description {
@@ -404,6 +406,7 @@ a:hover {
   font-size: 0.9rem;
   color: var(--color-muted);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -548,8 +551,20 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .input-wrapper {
-    flex-direction: column;
+  body {
+    overflow-x: hidden;
+  }
+  .main-container {
+    padding: 0 1rem;
+  }
+  .input-section {
+    padding: 1.5rem 1rem;
+  }
+  .card {
+    padding: 1.25rem;
+  }
+  .card-interactive {
+    padding: 1.25rem;
   }
   .cards-section {
     grid-template-columns: 1fr;
