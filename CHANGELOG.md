@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/oldmanumby/gitwarp/compare/v1.3.2...v1.3.3) (2026-07-22)
+
+
+### Bug Fixes
+
+* enforce GitWarp brand colors and lock docs into dark mode ([df947e9](https://github.com/oldmanumby/gitwarp/commit/df947e9ebd7e3707bc4075c801e5bcdb324660d6))
+
 ### [1.3.2](https://github.com/oldmanumby/gitwarp/compare/v1.3.1...v1.3.2) (2026-07-22)
 
 ### [1.3.1](https://github.com/oldmanumby/gitwarp/compare/v1.3.0...v1.3.1) (2026-07-22)
