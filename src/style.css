@@ -1,20 +1,22 @@
 :root {
   /* OKLCH Color Palette from Unsafe.Games */
-  --bg-site: oklch(0.17 0.02 255);       /* #151B23 */
-  --bg-card: oklch(0.23 0.02 260);       /* #212830 */
-  --text-body: oklch(1 0 0);             /* #ffffff */
-  --text-heading: oklch(0.6 0.14 255);   /* #478BE6 */
-  --color-link: oklch(0.45 0.18 35);     /* #b22c00 */
-  --color-icon: oklch(0.3 0.06 255);     /* #243C5A */
-  --color-border: oklch(0.3 0.06 255);   /* #243C5A */
-  --color-muted: oklch(0.6 0.015 255);   /* Lighter muted for readability */
-  --color-success: oklch(0.6 0.15 150);  /* Greenish for success toast */
-  --color-error: oklch(0.6 0.18 25);     /* Reddish for errors */
-  
+  --bg-site: oklch(0.17 0.02 255); /* #151B23 */
+  --bg-card: oklch(0.23 0.02 260); /* #212830 */
+  --text-body: oklch(1 0 0); /* #ffffff */
+  --text-heading: oklch(0.6 0.14 255); /* #478BE6 */
+  --color-link: oklch(0.45 0.18 35); /* #b22c00 */
+  --color-icon: oklch(0.3 0.06 255); /* #243C5A */
+  --color-border: oklch(0.3 0.06 255); /* #243C5A */
+  --color-muted: oklch(0.6 0.015 255); /* Lighter muted for readability */
+  --color-success: oklch(0.6 0.15 150); /* Greenish for success toast */
+  --color-error: oklch(0.6 0.18 25); /* Reddish for errors */
+
   --font-body: system-ui, -apple-system, sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -30,7 +32,12 @@ body {
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-heading);
   margin-top: 0;
 }
@@ -63,7 +70,9 @@ a:hover {
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  transition: filter 0.2s ease, transform 0.1s ease;
+  transition:
+    filter 0.2s ease,
+    transform 0.1s ease;
   border: none;
   gap: 0.5rem;
 }
@@ -182,9 +191,15 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   position: relative;
   border: 1px solid transparent;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .card.active {
@@ -231,7 +246,10 @@ a:hover {
   border-radius: 20px;
   margin-bottom: 1rem;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   border: 1px solid var(--color-border);
+  box-sizing: border-box;
 }
 
 .card-link {
@@ -240,7 +258,9 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: calc(100% - 30px);
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .card-description {
@@ -404,6 +424,7 @@ a:hover {
   font-size: 0.9rem;
   color: var(--color-muted);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -423,7 +444,8 @@ a:hover {
   color: oklch(0.98 0.02 150);
 }
 
-.context-badge.inactive, .context-badge.context-unknown {
+.context-badge.inactive,
+.context-badge.context-unknown {
   background-color: oklch(0.25 0.03 255);
   color: oklch(0.65 0.02 255);
   opacity: 0.5;
@@ -503,7 +525,8 @@ a:hover {
   font-weight: 500;
 }
 
-.interactive-input, .interactive-select {
+.interactive-input,
+.interactive-select {
   padding: 0.6rem 0.8rem;
   border-radius: 4px;
   border: 1px solid var(--color-border);
@@ -513,9 +536,14 @@ a:hover {
   outline: none;
   transition: border-color 0.2s ease;
   height: 42px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
-.interactive-input:focus, .interactive-select:focus {
+.interactive-input:focus,
+.interactive-select:focus {
   border-color: var(--text-heading);
 }
 
@@ -548,8 +576,20 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .input-wrapper {
-    flex-direction: column;
+  body {
+    overflow-x: hidden;
+  }
+  .main-container {
+    padding: 0 1rem;
+  }
+  .input-section {
+    padding: 1.5rem 1rem;
+  }
+  .card {
+    padding: 1.25rem;
+  }
+  .card-interactive {
+    padding: 1.25rem;
   }
   .cards-section {
     grid-template-columns: 1fr;
