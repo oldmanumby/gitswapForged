@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin dev"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
