@@ -281,16 +281,7 @@ export function renderInteractiveCards(containerEl, parsedContext) {
   const isContextValid = Boolean(parsedContext && typeof parsedContext === 'object' && parsedContext.valid && parsedContext.context !== 'Unknown');
 
   if (!isContextValid) {
-    containerEl.innerHTML = `
-      <div class="interactive-section-title">
-        <h2>Interactive Tools</h2>
-      </div>
-      <div class="interactive-grid">
-        <div class="card glass card-interactive disabled" style="text-align: center; color: var(--color-muted); padding: 2rem;">
-          Enter a valid GitHub URL to unlock interactive tools.
-        </div>
-      </div>
-    `;
+    containerEl.innerHTML = '';
     return;
   }
 
@@ -303,6 +294,7 @@ export function renderInteractiveCards(containerEl, parsedContext) {
   const initialCommitUrl = isCommitFeed ? buildCommitFeedUrl(parsedContext) : null;
 
   const html = `
+    <hr class="section-divider" style="margin-top: 2rem; margin-bottom: 2rem;" />
     <div class="interactive-section-title">
       <h2>Interactive Tools</h2>
     </div>
