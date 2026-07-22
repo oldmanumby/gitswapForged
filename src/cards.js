@@ -1,6 +1,5 @@
 /**
  * Project: GitWarp
- * Version: 1.0.0
  * Description: Registry of swappable URL tricks and card configurations.
  * 
  * Author: B.A. Umberger (Old Man Umby)

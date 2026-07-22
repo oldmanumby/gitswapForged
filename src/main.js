@@ -1,6 +1,5 @@
 /**
  * Project: GitWarp
- * Version: 1.0.0
  * Description: Core application initialization and UI event binding.
  * 
  * Author: B.A. Umberger (Old Man Umby)

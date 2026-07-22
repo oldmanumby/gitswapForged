@@ -1,6 +1,5 @@
 /**
  * Project: GitWarp
- * Version: 1.0.0
  * Description: Vite build and development configuration.
  * 
  * Author: B.A. Umberger (Old Man Umby)

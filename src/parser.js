@@ -1,6 +1,5 @@
 /**
  * Project: GitWarp
- * Version: 1.0.0
  * Description: Engine for parsing GitHub URLs and determining context.
  * 
  * Author: B.A. Umberger (Old Man Umby)

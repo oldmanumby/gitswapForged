@@ -1,6 +1,5 @@
 /**
  * Project: GitWarp
- * Version: 1.0.0
  * Description: ESLint v9 Flat Configuration for code quality.
  * 
  * Author: B.A. Umberger (Old Man Umby)

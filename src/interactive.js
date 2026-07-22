@@ -1,6 +1,5 @@
 /**
  * Project: GitWarp
- * Version: 1.0.0
  * Description: Logic for interactive tool cards like Time Machine and Deep Linker.
  * 
  * Author: B.A. Umberger (Old Man Umby)
