@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.5](https://github.com/oldmanumby/gitwarp/compare/v1.3.3...v1.3.5) (2026-07-22)
+
+
+### Bug Fixes
+
+* brute force CSS variables for blume docs theme ([40960a3](https://github.com/oldmanumby/gitwarp/commit/40960a3190731e73c2e4ffaea2a0eda5d5ff2899))
+* resolve docs styling issues by using native theme.css ([0f337bf](https://github.com/oldmanumby/gitwarp/commit/0f337bf91b32bb2f8ce842e422c8bbeff6ec9e8e))
+
+### [1.3.4](https://github.com/oldmanumby/gitwarp/compare/v1.3.3...v1.3.4) (2026-07-22)
+
+### Bug Fixes
+
+- brute force CSS variables for blume docs theme ([40960a3](https://github.com/oldmanumby/gitwarp/commit/40960a3190731e73c2e4ffaea2a0eda5d5ff2899))
+- resolve docs styling issues by using native theme.css ([0f337bf](https://github.com/oldmanumby/gitwarp/commit/0f337bf91b32bb2f8ce842e422c8bbeff6ec9e8e))
+
 ## [1.3.3](https://github.com/oldmanumby/gitwarp/compare/v1.3.2...v1.3.3) (2026-07-22)
 
 ### Bug Fixes
