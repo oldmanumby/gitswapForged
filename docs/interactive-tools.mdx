@@ -1,0 +1,41 @@
+---
+title: "Interactive Tools"
+description: "Documentation for the advanced interactive tools."
+---
+
+# Interactive Tools
+
+For deeper repository manipulation, GitWarp offers three advanced interactive cards that dynamically update your generated URL in real-time as you tweak parameters.
+
+## 1. Deep Linker
+The Deep Linker targets precise code line numbers, line ranges, and raw text views. 
+
+**Requirements:** `File` context URL.
+
+**Options:**
+*   **Line Start:** Specify the starting line to highlight.
+*   **Line End:** Specify the ending line to create a highlighted range.
+*   **Format as Raw Text:** Toggles the `?plain=1` parameter to bypass GitHub's rich UI rendering and show raw text.
+
+## 2. Time Machine Compare
+The Time Machine Compare allows you to compare branches, tags, commit SHAs, or relative historical dates instantly without using the command line.
+
+**Requirements:** `Repo` or `File` context URL.
+
+**Options:**
+*   **Base Ref:** The foundation branch or commit to compare against (defaults to `main`).
+*   **Compare Mode:**
+    *   *Branch / Tag / SHA:* Standard Git comparison.
+    *   *Relative Timeframe:* Compare against the state of the repo "1 week ago", "1 month ago", etc.
+    *   *Custom Date:* Pick a specific calendar date to compare against.
+*   **Filter to Path:** If you pasted a file URL, this toggle automatically appends the `?path=` query parameter to restrict the diff view to that specific file.
+
+## 3. Commit Feed
+Filter repository commit history by branch, author, and file path to instantly find the changes you're looking for.
+
+**Requirements:** `Repo` or `File` context URL.
+
+**Options:**
+*   **Branch / Ref:** Specify which branch's history to view.
+*   **Author Filter:** Filter commits strictly to a specific GitHub username or email (using the `?author=` parameter).
+*   **Path Filter:** Restrict the commit history feed to a specific directory or file.
