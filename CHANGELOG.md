@@ -1,6 +1,44 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.3.0 (2026-07-22)
+
+
+### Features
+
+* integrate Blume docs build into vite pipeline and add UI link ([d2ff6d7](https://github.com/oldmanumby/gitwarp/commit/d2ff6d7708236fe7f87a405c14b2d97cb9c7a4da))
+
+
+### Bug Fixes
+
+* append trailing slashes to blume routes ([1acf7da](https://github.com/oldmanumby/gitwarp/commit/1acf7da69dd2d888265ddafada1564f54bf0168f))
+* explicit index.html for static hosting routing ([67861ca](https://github.com/oldmanumby/gitwarp/commit/67861cac9edad504b6c2d588d2be4c50ff307a6d))
+* use hex for blume config and fix nav link ([d3f1390](https://github.com/oldmanumby/gitwarp/commit/d3f1390ad099ad9ed8a8c141445c33917cf21ede))
+
+## 1.2.0 (2026-07-22)
+
+### Features
+
+- integrate Blume docs build into vite pipeline and add UI link ([d2ff6d7](https://github.com/oldmanumby/gitwarp/commit/d2ff6d7708236fe7f87a405c14b2d97cb9c7a4da))
+
+### Bug Fixes
+
+- append trailing slashes to blume routes ([1acf7da](https://github.com/oldmanumby/gitwarp/commit/1acf7da69dd2d888265ddafada1564f54bf0168f))
+- explicit index.html for static hosting routing ([67861ca](https://github.com/oldmanumby/gitwarp/commit/67861cac9edad504b6c2d588d2be4c50ff307a6d))
+- use hex for blume config and fix nav link ([d3f1390](https://github.com/oldmanumby/gitwarp/commit/d3f1390ad099ad9ed8a8c141445c33917cf21ede))
+
+## 1.1.0 (2026-07-22)
+
+### Features
+
+- integrate Blume docs build into vite pipeline and add UI link ([d2ff6d7](https://github.com/oldmanumby/gitwarp/commit/d2ff6d7708236fe7f87a405c14b2d97cb9c7a4da))
+
+### Bug Fixes
+
+- append trailing slashes to blume routes ([1acf7da](https://github.com/oldmanumby/gitwarp/commit/1acf7da69dd2d888265ddafada1564f54bf0168f))
+- explicit index.html for static hosting routing ([67861ca](https://github.com/oldmanumby/gitwarp/commit/67861cac9edad504b6c2d588d2be4c50ff307a6d))
+- use hex for blume config and fix nav link ([d3f1390](https://github.com/oldmanumby/gitwarp/commit/d3f1390ad099ad9ed8a8c141445c33917cf21ede))
 
 ## [1.0.0] - 2026-07-22
 
