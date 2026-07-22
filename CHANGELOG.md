@@ -53,3 +53,5 @@ All notable changes to this project will be documented in this file. See [standa
 - Restyled cards to show clear inactive states (red borders/text) for URLs that don't match the required context.
 - Optimized the main layout and interactive cards for mobile viewing.
 - The Interactive Tools and Standard Cards sections are now hidden cleanly until a valid URL is entered.
+
+[1.0.0]: https://github.com/oldmanumby/gitwarp/releases/tag/v1.0.0
