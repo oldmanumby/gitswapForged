@@ -132,7 +132,11 @@ function renderStandardCards(parsedContext) {
   const isValid = Boolean(parsedContext && parsedContext.valid && parsedContext.context !== 'Unknown');
 
   if (!isValid) {
-    cardsGrid.innerHTML = '';
+    cardsGrid.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; color: var(--color-muted); padding: 3rem;">
+        Enter a valid GitHub URL above to see available super-swaps.
+      </div>
+    `;
     return;
   }
 

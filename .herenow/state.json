@@ -17,6 +17,12 @@
       "claimToken": "7a4e74fbd6ee92cdb5a0f5f8a0b29e207f6354ceb1d80c952416ebf846fedb63",
       "claimUrl": "https://here.now/claim?slug=boreal-pillar-9362&token=7a4e74fbd6ee92cdb5a0f5f8a0b29e207f6354ceb1d80c952416ebf846fedb63",
       "expiresAt": "2026-07-23T13:43:22.214Z"
+    },
+    "coral-rafter-dqf9": {
+      "siteUrl": "https://coral-rafter-dqf9.here.now/",
+      "claimToken": "eb3485ebf7d50def9b55b799301d2d97104b2efac7fa8d9cc3fe770a8cc5eeb1",
+      "claimUrl": "https://here.now/claim?slug=coral-rafter-dqf9&token=eb3485ebf7d50def9b55b799301d2d97104b2efac7fa8d9cc3fe770a8cc5eeb1",
+      "expiresAt": "2026-07-23T13:48:22.121Z"
     }
   }
 }
