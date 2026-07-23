@@ -130,7 +130,7 @@ function parseRawGithubUrl(parsedUrl, rawUrl, queryParams, lineStart, lineEnd) {
  * @param {Function} createUnknownResult
  * @returns {Object}
  */
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 function parseStandardGithubUrl(
   parsedUrl,
   rawUrl,

@@ -72,21 +72,25 @@ export class MockElement {
       const child = new MockElement(tagName);
       child.parentElement = this;
 
-      const attrRegex = /([a-zA-Z0-9-.]+)(?:=(?:"([^"]*)"|'([^']*)'|([^\s>]+)))?/g;
-      let attrMatch;
-      while ((attrMatch = attrRegex.exec(attrStr)) !== null) {
-        const key = attrMatch[1];
-        const val = attrMatch[2] ?? attrMatch[3] ?? attrMatch[4] ?? '';
-        child.setAttribute(key, val);
-        if (key === 'id') child.id = val;
-        if (key === 'class') child.className = val;
-        if (key === 'disabled') child.disabled = true;
-      }
+      this.parseAttributes(attrStr, child);
 
       if (innerStr.trim()) {
         child.innerHTML = innerStr;
       }
       this.children.push(child);
+    }
+  }
+
+  parseAttributes(attrStr, child) {
+    const attrRegex = /([a-zA-Z0-9-.]+)(?:=(?:"([^"]*)"|'([^']*)'|([^\s>]+)))?/g;
+    let attrMatch;
+    while ((attrMatch = attrRegex.exec(attrStr)) !== null) {
+      const key = attrMatch[1];
+      const val = attrMatch[2] ?? attrMatch[3] ?? attrMatch[4] ?? '';
+      child.setAttribute(key, val);
+      if (key === 'id') child.id = val;
+      if (key === 'class') child.className = val;
+      if (key === 'disabled') child.disabled = true;
     }
   }
 
@@ -193,7 +197,7 @@ export class MockElement {
   }
 }
 
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 export function matchesSelector(el, selector) {
   if (!el || !selector) return false;
   const parts = selector.match(/#[a-zA-Z0-9_-]+|\.[a-zA-Z0-9_-]+|\[[^\]]+\]|[a-zA-Z0-9-]+/g) || [

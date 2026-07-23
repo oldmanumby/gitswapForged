@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.3.7](https://github.com/oldmanumby/gitwarp/compare/v1.3.6...v1.3.7) (2026-07-23)
 
-
 ### Bug Fixes
 
-* resolve blume docs styling by removing broken theme.css and configuring natively ([a948bff](https://github.com/oldmanumby/gitwarp/commit/a948bff75f5252367f76276c7017f70bc07eb71f))
-* resolve remaining adversarial UI test assertion failures ([2567751](https://github.com/oldmanumby/gitwarp/commit/25677511e1c9ef9ca7e4c17e45921c0b5a8d355d))
+- resolve blume docs styling by removing broken theme.css and configuring natively ([a948bff](https://github.com/oldmanumby/gitwarp/commit/a948bff75f5252367f76276c7017f70bc07eb71f))
+- resolve remaining adversarial UI test assertion failures ([2567751](https://github.com/oldmanumby/gitwarp/commit/25677511e1c9ef9ca7e4c17e45921c0b5a8d355d))
 
 ### [1.3.6](https://github.com/oldmanumby/gitwarp/compare/v1.3.5...v1.3.6) (2026-07-22)
 

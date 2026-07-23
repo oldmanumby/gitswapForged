@@ -45,7 +45,7 @@
  * @param {string} [prefix='']
  * @returns {string|null}
  */
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 function generateDomainUrl(domain, ctx, prefix = '') {
   if (!ctx || !ctx.owner || !ctx.repo) return null;
   if (ctx.context === 'File' && ctx.filePath) {

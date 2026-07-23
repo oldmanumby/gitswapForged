@@ -59,7 +59,7 @@ export function isInteractiveCardCompatible(cardId, parsedContext) {
  * @param {Object} [options={}]
  * @returns {string|null}
  */
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 export function buildDeepLinkerUrl(parsedContext, options = {}) {
   if (
     !parsedContext ||
@@ -178,7 +178,7 @@ function safeEncodeRef(refStr) {
  * @param {Object} [options={}]
  * @returns {string|null}
  */
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 export function buildTimeMachineUrl(parsedContext, options = {}) {
   if (!parsedContext || typeof parsedContext !== 'object' || !parsedContext.valid) {
     return null;
@@ -250,7 +250,7 @@ export function buildTimeMachineUrl(parsedContext, options = {}) {
  * @param {Object} [options={}]
  * @returns {string|null}
  */
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 export function buildCommitFeedUrl(parsedContext, options = {}) {
   if (!parsedContext || typeof parsedContext !== 'object' || !parsedContext.valid) {
     return null;
@@ -338,7 +338,7 @@ function toggleTimeMachineVisibility(mode, refGroup, timeframeGroup, dateGroup) 
  * @param {HTMLElement} containerEl
  * @param {Object} parsedContext
  */
-  // fallow-ignore-next-line complexity
+// fallow-ignore-next-line complexity
 export function renderInteractiveCards(containerEl, parsedContext) {
   if (!containerEl || typeof containerEl !== 'object') return;
 

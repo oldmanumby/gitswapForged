@@ -10,11 +10,36 @@ import {
 } from '../src/interactive.js';
 
 // Utility helper for pseudorandom deterministic generation (PRNG) for property testing
-function createRandom(seed = 12345) {
-  let state = seed;
-  return function rand() {
-    state = (state * 9301 + 49297) % 233280;
-    return state / 233280;
+function createRandom(seed) {
+  return function () {
+    seed = (seed * 16807) % 2147483647;
+    return (seed - 1) / 2147483646;
+  };
+}
+
+function generateRandomOptions(rand) {
+  const lineStartOpt =
+    rand() < 0.3
+      ? null
+      : rand() < 0.6
+        ? undefined
+        : rand() < 0.8
+          ? Math.floor(rand() * 200) - 50
+          : String(Math.floor(rand() * 100));
+  const lineEndOpt =
+    rand() < 0.3
+      ? null
+      : rand() < 0.6
+        ? undefined
+        : rand() < 0.8
+          ? Math.floor(rand() * 200) - 50
+          : String(Math.floor(rand() * 100));
+  const plainOpt = rand() < 0.5 ? true : rand() < 0.8 ? false : undefined;
+
+  return {
+    lineStart: lineStartOpt,
+    lineEnd: lineEndOpt,
+    plainToggle: plainOpt,
   };
 }
 
@@ -54,29 +79,7 @@ describe('Interactive Cards Property & DOM Invariant Tests', () => {
           queryParams: { plain: rand() > 0.5 ? '1' : null },
         };
 
-        const lineStartOpt =
-          rand() < 0.3
-            ? null
-            : rand() < 0.6
-              ? undefined
-              : rand() < 0.8
-                ? Math.floor(rand() * 200) - 50
-                : String(Math.floor(rand() * 100));
-        const lineEndOpt =
-          rand() < 0.3
-            ? null
-            : rand() < 0.6
-              ? undefined
-              : rand() < 0.8
-                ? Math.floor(rand() * 200) - 50
-                : String(Math.floor(rand() * 100));
-        const plainOpt = rand() < 0.5 ? true : rand() < 0.8 ? false : undefined;
-
-        const options = {
-          lineStart: lineStartOpt,
-          lineEnd: lineEndOpt,
-          plainToggle: plainOpt,
-        };
+        const options = generateRandomOptions(rand);
 
         const result = buildDeepLinkerUrl(fileContext, options);
 
@@ -409,7 +412,7 @@ describe('Interactive Cards Property & DOM Invariant Tests', () => {
         },
       });
 
-  // fallow-ignore-next-line complexity
+      // fallow-ignore-next-line complexity
       function parseAndBuildTree(html, parent) {
         // HTML parser helper for mock node tree construction
         const tagRegex = /<([a-z1-6]+)([^>]*)>([\s\S]*?)<\/\1>|<([a-z1-6]+)([^>]*)\/?>/gi;
